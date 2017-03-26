@@ -1,0 +1,35 @@
+{
+  "name": "unigame.js",
+  "version": "1.0.0",
+  "description": "ES6 game library for all engines",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "mixwith": "github:justinfagnani/mixwith.js"
+  },
+  "scripts": {
+    "prepare": "npm run -s clean && npm run -s babel",
+    "clean": "rimraf dist/**",
+    "babel": "babel --out-dir dist src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo60228/UniGame.js.git"
+  },
+  "keywords": [
+    "game",
+    "es6",
+    "helpers"
+  ],
+  "author": "leo60228",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo60228/UniGame.js/issues"
+  },
+  "homepage": "https://github.com/leo60228/UniGame.js#readme"
+}
